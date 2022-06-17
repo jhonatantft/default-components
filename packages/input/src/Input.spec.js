@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import Input from './Input';
+import Input from '.';
 
 describe('Input', () => {
   it('renders correctly', () => {
