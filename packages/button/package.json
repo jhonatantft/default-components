@@ -2,7 +2,7 @@
   "name": "button",
   "version": "1.0.1",
   "main": "lib/index.js",
-  "module": "src/index.js",
+  "module": "src/button.js",
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",
