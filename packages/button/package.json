@@ -1,7 +1,7 @@
 {
   "name": "button",
-  "version": "1.0.2",
-  "main": "lib/index.js",
+  "version": "1.0.1",
+  "main": "lib/button.js",
   "module": "src/button.js",
   "dependencies": {
     "react": "latest",
