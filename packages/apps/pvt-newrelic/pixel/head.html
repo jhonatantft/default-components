@@ -1,0 +1,19 @@
+<script>
+  (function() {
+    var accountName = "{{settings.accountName}}";
+    var fileName = "{{settings.fileName}}";
+    if (!accountName || !fileName) {
+      console.error('Warning: No ACCOUNT NAME OR FILE NAME is defined. Please configure it in the apps admin.');
+      return
+    }
+    
+    // Add script here
+    var head = document.querySelector('head');
+    var scriptTag = document.createElement('script')
+    scriptTag.src = `https://${accountName}.vteximg.com.br/arquivos/${fileName}.js`;
+
+    head.appendChild(scriptTag);
+  })()
+</script>
+
+

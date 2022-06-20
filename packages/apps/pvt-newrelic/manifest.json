@@ -1,0 +1,33 @@
+{
+  "name": "pvt-newrelic",
+  "vendor": "__VTEX_INSTANCE_NAME__",
+  "version": "1.0.0",
+  "title": "New Relic",
+  "description": "Pixel application for adding the new relic's script in your store",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "newrelic",
+    "type": "object",
+    "properties": {
+      "accountName": {
+        "title": "Vendor Name",
+        "description": "Enter the vendor's name",
+        "type": "string"
+      },
+      "fileName": {
+        "title": "New Relic Script",
+        "description": "Enter the name of the js file, for example: if your file is called 'newrelicsript.js', just add 'newrelicscript'",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
